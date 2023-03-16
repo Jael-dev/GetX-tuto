@@ -17,3 +17,7 @@ The project structure is as follows:
 6. Widgets: The reusable widgets.
 
 Note on GetX: GetX is an extra-light and powerful solution for Flutter. It combines high-performance state management, intelligent dependency injection, and route management quickly and practically. I think what I like the most is GetX is not bloated. It has a multitude of features that allow you to start programming without worrying about anything, but each of these features are in separate containers and are only started after use. If you only use State Management, only State Management will be compiled. If you only use routes, nothing from the state management will be compiled.
+
+
+Get.put() makes a controller class availaible foor all 'child' routes.
+Get.find() asks Get to find a controller that is being used by another page and redirect you to it.
