@@ -1,16 +1,19 @@
 # dashboard
 
-A new Flutter project.
+Flutter web app. It is a dashboard.
 
-## Getting Started
+The project structure is as follows:
 
-This project is a starting point for a Flutter application.
+1. Constants: Stores the constant values
 
-A few resources to get you started if this is your first Flutter project:
+2. Controllers: Since the project will use GETX, we will need controllers
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Helpers contains functions that will be used throughout the app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Pages: The website pages
+
+5. Routing: Used for navigation 
+
+6. Widgets: The reusable widgets.
+
+Note on GetX: GetX is an extra-light and powerful solution for Flutter. It combines high-performance state management, intelligent dependency injection, and route management quickly and practically. I think what I like the most is GetX is not bloated. It has a multitude of features that allow you to start programming without worrying about anything, but each of these features are in separate containers and are only started after use. If you only use State Management, only State Management will be compiled. If you only use routes, nothing from the state management will be compiled.
