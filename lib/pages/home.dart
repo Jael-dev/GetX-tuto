@@ -9,15 +9,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Obx(()=> Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text("Clicks: ${counterController.counter.value}"),
-          const SizedBox(height: 10),
-          IconButton(onPressed: () {counterController.increment();} , icon: const Icon(Icons.add)),
-          IconButton(onPressed: () {Get.to(OtherPage());} , icon: const Icon(Icons.arrow_back_ios)),
-        ],
+      body: Obx(()=> Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("Clicks: ${counterController.counter.value}"),
+            const SizedBox(height: 10),
+            IconButton(onPressed: () {counterController.increment();} , icon: const Icon(Icons.add, color: Colors.amber,)),
+            FloatingActionButton(onPressed: () {Get.to(OtherPage());} , child: const Icon(Icons.arrow_back_ios)),
+          ],
+        ),
       ))
     );
   }
